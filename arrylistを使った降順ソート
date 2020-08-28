@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+
+		System.out.println("点数を入力してください");
+		System.out.println("終了するには0を入力して下さい");
+
+
+		out: while(true) {
+		int nums = new java.util.Scanner(System.in).nextInt();
+
+		if(nums<=0) {
+			list.remove(list);
+			break out;
+		}
+
+		else {
+			list.add(nums);
+		}
+
+		}
+
+		System.out.println("データを昇順で出力します");
+
+		Collections.sort(list,Collections.reverseOrder());
+
+
+		for(int list2:list) {
+			System.out.println(list2);
+		}
+
+
+
+	}
+
+}
