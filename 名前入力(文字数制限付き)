@@ -1,0 +1,24 @@
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+		System.out.println("8文字以内で名前を入力してください");
+
+		while(true) {
+
+		String name = new java.util.Scanner(System.in).nextLine();
+
+		if(name.length()>=8) {
+			System.out.println(name+"は8文字以上です。もう一度入力して下さい");
+		}
+		else {
+			System.out.println(name+"にユーザー名を決定しました");
+			break;
+		}
+
+	}
+
+	}
+
+}
